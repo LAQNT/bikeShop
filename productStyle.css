@@ -114,105 +114,79 @@ li a {
     text-decoration: none;
 }
 
-/* ------jumbotron-------- */
-#jumbotron{
-    background-color: rgb(23, 44, 66);
-    margin-top: 6.4rem;
-    text-align: center;
+/* ---------main----- */
+main {
+    margin-top: 5.5rem;
+    margin-bottom: 9rem;
 }
 
-#jumbotron .container{
-    text-align: center;
+main .container{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding: 5rem 4rem 1rem 4rem;
+    background-color: white;
+    border-radius: .5rem;
+    border: 1px solid rgb(211, 211, 211);
 }
 
-#jumbotron p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: rgb(148, 255, 86);
-    text-align: center;
-    padding: 1.5rem 0;
-    /* width: 20rem; */
-    
+.container img{
+    max-height: 25rem;
 }
 
-#jumbotron span {
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: rgb(255, 255, 255); 
-}
-
-/* ------pre shop-------- */
-.hide {
-    display: none;
-}
-
-.spinner {
-    margin: 0 50%;
-}
-/* ---------shop----------- */
-.card {
-    position: relative;
-    cursor: pointer;
-}
-
-.card span {
+.container h3{
     font-weight: 600;
-    color: rgb(23, 44, 66);
+
 }
 
+.product-info{
+    padding: 0 3rem;
 
-.card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1.2rem;
-}
-
-.price-buttons{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    gap: 1rem;
 }
 
-.card-title{
-    font-size: 1.2rem;
-    color: rgb(60, 60, 60);
-    font-weight: 600;
-    
-    display: -webkit-box;
-   -webkit-line-clamp: 2; 
-   -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.card-text {
-    font-size: .85rem;
-    color: rgb(117, 117, 117);
-    text-transform: capitalize;
-}
-
-.price-buttons span{
-    font-weight: 600;
-}
-
-.card button {
-    border-radius: 50%;
-    height: 2.5rem;
-}
-
-.card button i{
+.product-info div:last-of-type{
     display: flex;
-    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info div span:last-of-type{
+    font-size: .7rem;
+    color: rgb(155, 155, 155);
+}
+
+.product-info div:last-of-type span:first-of-type{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.extra-info{
+    display: flex;
+    align-self:self-end;
+    justify-content: space-between;
+    margin-top: 4rem;
+    font-size: .75rem;
+    align-content: center;
+}
+
+.extra-info i {
+    font-size: .9rem;
+    margin-right: .5rem;
 }
 
 
 
-/* ------footer-------- */
-footer{
-    border-top: solid .5px rgb(222, 222, 222);
-    margin-top: 8rem;
 
+/* ---------footer----- */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 8rem; */
     background-color: rgb(23, 44, 66);
 
     display: flex;

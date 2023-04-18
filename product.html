@@ -18,9 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet"> 
     <!-- --------------------- -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productStyle.css">
 
-    <title>Bike Shop</title>
+    <title></title>
 </head>
 
 <body class="bg-light">
@@ -63,33 +63,65 @@
         </div>
     </nav>
     <!-- ------------------------------------------ -->   
-    <!-- -------------jumbotron-------------------- -->
-    <section id="jumbotron">
-        <div class="container" >
-            <p>Best offers: <span>bicycles, accessories and more</span></p>
-        </div>
-    </section>
-    <!-- ------------------------------------------ -->   
-    <!-- -------------shop-------------------- -->
+    <!--------------PRODUCT-------------------- -->
     <main>
-        <div class="container px-3 mt-5">
-            <h3>Recomended</h3>
-        </div>
-        <div class="container px-3 mt-3">
-            <div id="shop" class="row">
+        <div class="container" id="container">
+            <div class="row gy-4 d-flex justify-content-center">
 
-                <div class="spinner">
-                    <div class="spinner-border" role="status">
-                        <span class="sr-only"></span>
-                    </div>
+                <div class="img-container col-12 col-lg-6 d-flex justify-content-center">
+                    <img id="img" src="" alt="">
+                </div>
+                <div class="product-info col-12 col-lg-4 col-xl-4">
+                <div>
+                    <span id="brand"></span>
+                    <h3 id="title"></h3>
+                    <span> id:
+                        <span id="product-id"></span>
+                    </span>
+                </div>
+                <span id="description"></span>
+                <div>
+                    <span id="price"></span>
+                    <span>taxes included</span>
+                </div>
+                
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected>Select frame size</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                    <option value="3">XL</option>
+                </select>
+                
+                <button type="button" class="btn btn-info">Add to cart</button>
 
+                
+                
+            </div>
+            
+            
+            
+            <div class="extra-info">
+                <div>
+                    <i class="bi bi-emoji-smile"></i>
+                    <span>30 days guarantee</span>
+                </div>
+                <div>
+                    <i class="bi bi-truck"></i>
+                    
+                    <span>Free delivery from €100</span>
+                </div>
+                <div>
+                    <i class="bi bi-calendar3"></i>
+                    <span>Delivery from 4 to 6 work days</span>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <!-- ------------------------------------------ -->   
     <!-- ----------------footer------------------- -->   
-    <footer>
+    <footer >
         <div class="footer-left">
             <span>Bike Shop</span>
             <span>Laura Quintero</span>
@@ -105,6 +137,6 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>

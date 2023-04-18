@@ -34,8 +34,9 @@ async function generateShop (){
         let {_id, name, description, brand, imageUrl, price} = product;
         
         return `
-            <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" >
-                    <i class="bi bi-eye-slash-fill"></i>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 gy-4">
+            <div class="card" onclick="openProduct('${_id}')">
+                    
                     <div class="img-container p-4">
                         <img src="${imageUrl}" class="card-img-top"  alt="">
                     </div>
@@ -56,9 +57,16 @@ async function generateShop (){
                         </div>
                     </div>
                 </div> 
+            </div> 
              `;
 
     }).join(""));
 
 }
 generateShop ();
+
+
+async function openProduct(productId) {
+    let productsData = await getData();
+    window.location.href = `product.html?id=${productId}`;
+}
