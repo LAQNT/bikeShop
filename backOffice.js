@@ -9,15 +9,21 @@ const submitProduct = document.getElementById('submit-btn');
 
 // -------insert form inputs inside variables-------------
 const nameInput = document.getElementById('name');
+const nameInputError = document.getElementById('nameInputError');
+
 const descInput = document.getElementById('description');
+const descInputError = document.getElementById('descInputError');
+
 const brandInput = document.getElementById('brand');
+const brandInputError = document.getElementById('brandInputError');
+
 const imgUrlInput = document.getElementById('img-url');
 const priceInput = document.getElementById('price');
 
 
 // -------------POST data =>new item form------------
 form.addEventListener('submit', async(e)=>{
-    e.preventDefault();
+    // formValidation()
 
     const product = {
         name: nameInput.value,
@@ -38,9 +44,11 @@ form.addEventListener('submit', async(e)=>{
         });
         window.location.href = 'backOffice.html?status=additem-ok';
     }
+    
     catch (error) {
         console.log(error);
     }
+
 
 });
 
@@ -80,6 +88,7 @@ async function dataIntoTable() {
         const row = `
         <tr>
             <td>${_id}</td>
+            <td><img src="${imageUrl}"></td>
             <td>${name}</td>
             <td>${description}</td>
             <td>${brand}</td>
@@ -87,8 +96,8 @@ async function dataIntoTable() {
             <td>${updatedAt}</td>
            
             <td>
-            <button class="btn btn-primary" onclick="editProduct('${_id}')">Edit</button>
-            <button class="btn btn-danger" onclick="deleteProduct('${name}','${_id}')">Delete</button>
+            <button class="btn btn-primary" onclick="editProduct('${_id}')"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger" onclick="deleteProduct('${name}','${_id}')"><i class="bi bi-x-circle"></i></button>
             </td>
         </tr>       
         `
@@ -101,7 +110,7 @@ dataIntoTable();
 function editProduct(productId) {
     window.location.href = `editProduct.html?id=${productId}`
 }
-// GO TO NEW PRODUCT HTML
+// GO TO PRODUCT HTML
 
 // --------------DELETE data---------------
 async function deleteProduct(productName, productId) {
@@ -124,5 +133,33 @@ async function deleteProduct(productName, productId) {
   }
 
 
+// --------------form VALIDATION---------------
 
+// function formValidation() {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault()
+
+        if (nameInput.value == '' || nameInput.value == null) {
+            nameInputError.innerText = 'Name is required';
+        }
+
+
+        if (descInput.value == '' || nameInput.value == null) {
+            descInputError.innerText = 'Description is required';
+        } 
+        if (descInput.value.length > 10 ){
+            descInputError.innerText = 'Description must be maximun 10';
+        }
+
+        if (brandInput.value == '' || brandInput.value == null) {
+            brandInputError.innerText = 'Brand is required';
+        }
+
+        form.submit();
+        
+        
+    })
+// }
+// formValidation();
+    
   

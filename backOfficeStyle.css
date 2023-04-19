@@ -3,6 +3,7 @@
 thead{
     text-align: center;
     background-color: rgb(237, 237, 237);
+    font-size: .9rem;
 }
 
 td {
@@ -13,20 +14,48 @@ th {
     padding-top: .1rem ;
 }
 
+img {
+    height: 2rem;
+}
+
 #table-products button {
     font-size: .75rem;
     padding: .2rem .5rem;
 }
 
-i{
+button {
+    display: flex;
+    text-align:center;
+
+}
+
+button i {
+    font-size: .8rem;
+}
+
+.bi-plus-circle-fill{
     font-size: 1rem;
-    margin-right: .5rem;
+    margin-right: .3rem;
+}
+
+
+form {
+    position: relative;
+}
+
+.error{
+    font-size: .8rem;
+    color: rgb(219, 0, 0);
+    padding:.3rem;
 }
 
 footer{
     border-top: solid .5px rgb(222, 222, 222);
-    margin-top: 8rem;
-    height: 6rem;
+    margin-top: 8.3rem;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: rgb(246, 246, 246);
     display: flex;
     justify-content: center;

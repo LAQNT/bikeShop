@@ -182,11 +182,10 @@ main .container{
 
 /* ---------footer----- */
 footer{
-    position: fixed;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
-    /* height: 8rem; */
     background-color: rgb(23, 44, 66);
 
     display: flex;

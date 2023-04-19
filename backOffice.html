@@ -21,10 +21,11 @@
     <div class="container-fluid mt-5">
         <div class="container-fluid text-center">
                 <h3>Back Office</h3>
-                <table class="table table-hover table-bordered mt-4" >
+                <table class="table table-hover table-bordered mt-5" >
                     <thead>
                         <tr>
                             <th>Id</th>
+                            <th>Image</th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Brand</th>
@@ -43,28 +44,31 @@
         
         <div class="container-fluid p-0">
             <button class="btn btn-warning  mb-3" 
-            data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="false" aria-controls="form"><i class="bi bi-plus-circle-fill"></i>Add item</button>
+            data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="false" aria-controls="form"><i class="bi bi-plus-circle-fill"></i> Add product</button>
             
         </div>
 
         <div class="collapse " id="form">
 
-            <form id="user-form" >
+            <form id="user-form">
                 <!-- <h3>New Item</h3> -->
                 <!-- --------name------- -->
                 <div class="mb-4 ">
                     <label for="Item-id" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"> 
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    <div class="error" id="nameInputError"></div> 
                 </div>
                 <!-- --------desc------- -->
                 <div class="mb-4">
                     <label for="Item-id" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="description" aria-describedby="emailHelp"> 
+                    <input type="text" class="form-control" id="description" aria-describedby="emailHelp">
+                    <div class="error" id="descInputError"></div> 
                 </div>
                 <!-- --------brand------- -->
                 <div class="mb-4">
                     <label for="Item-id" class="form-label">Brand</label>
-                    <input type="text" class="form-control" id="brand" aria-describedby="emailHelp"> 
+                    <input type="text" class="form-control" id="brand" aria-describedby="emailHelp">
+                    <div class="error" id="brandInputError"></div>  
                 </div>
                 <!-- --------img------- -->
                 <div class="mb-4">
@@ -77,7 +81,7 @@
                     <input type="number" class="form-control" id="price" aria-describedby="emailHelp"> 
                 </div>
 
-                <button type="submit" class="btn btn-success d-flex ">Upload new item</button>
+                <button  class="btn btn-success d-flex ">Upload new product</button>
             </form>
         </div>
     </div>
