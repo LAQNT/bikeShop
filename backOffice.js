@@ -18,13 +18,15 @@ const brandInput = document.getElementById('brand');
 const brandInputError = document.getElementById('brandInputError');
 
 const imgUrlInput = document.getElementById('img-url');
+const imgUrlInputError = document.getElementById('imgUrlError');
 const priceInput = document.getElementById('price');
+const priceInputError = document.getElementById('priceInputError');
 
 
 // -------------POST data =>new item form------------
 form.addEventListener('submit', async(e)=>{
-    // formValidation()
 
+    
     const product = {
         name: nameInput.value,
         description: descInput.value,
@@ -135,31 +137,38 @@ async function deleteProduct(productName, productId) {
 
 // --------------form VALIDATION---------------
 
-// function formValidation() {
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault()
-
+        
+        // --------name validation------
         if (nameInput.value == '' || nameInput.value == null) {
             nameInputError.innerText = 'Name is required';
         }
 
-
+        // --------description validation------
         if (descInput.value == '' || nameInput.value == null) {
             descInputError.innerText = 'Description is required';
         } 
-        if (descInput.value.length > 10 ){
+        if (descInput.value.length > 20 ){
             descInputError.innerText = 'Description must be maximun 10';
         }
-
+        
+        // --------brand validation------
         if (brandInput.value == '' || brandInput.value == null) {
             brandInputError.innerText = 'Brand is required';
         }
+        // --------image validation------
+        if (imgUrlInput.value == '' || imgUrlInput.value == null) {
+            imgUrlInputError.innerText = 'Image URL is required';
+        }
+        // --------price validation------
+        if (priceInput.value == '' || priceInput.value == null) {
+            priceInputError.innerText = 'Price is required';
+        }
 
-        form.submit();
-        
-        
     })
-// }
-// formValidation();
+
+
     
   

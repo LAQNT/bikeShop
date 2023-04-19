@@ -51,37 +51,38 @@
         <div class="collapse " id="form">
 
             <form id="user-form">
-                <!-- <h3>New Item</h3> -->
                 <!-- --------name------- -->
                 <div class="mb-4 ">
                     <label for="Item-id" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="name" >
                     <div class="error" id="nameInputError"></div> 
                 </div>
                 <!-- --------desc------- -->
                 <div class="mb-4">
                     <label for="Item-id" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="description" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="description" >
                     <div class="error" id="descInputError"></div> 
                 </div>
                 <!-- --------brand------- -->
                 <div class="mb-4">
                     <label for="Item-id" class="form-label">Brand</label>
-                    <input type="text" class="form-control" id="brand" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="brand" >
                     <div class="error" id="brandInputError"></div>  
                 </div>
                 <!-- --------img------- -->
                 <div class="mb-4">
                     <label for="Item-id" class="form-label">Image url</label>
-                    <input type="url" class="form-control" id="img-url" aria-describedby="emailHelp"> 
+                    <input type="url" class="form-control" id="img-url">
+                    <div class="error" id="imgUrlError"></div>   
                 </div>
                 <!-- --------price------- -->
                 <div class="mb-4">
                     <label for="Item-id" class="form-label">Price</label>
-                    <input type="number" class="form-control" id="price" aria-describedby="emailHelp"> 
+                    <input type="number" class="form-control" id="price" > 
+                    <div class="error" id="priceInputErrorr"></div>   
                 </div>
 
-                <button  class="btn btn-success d-flex ">Upload new product</button>
+                <button id="submit-btn" class="btn btn-success d-flex ">Upload new product</button>
             </form>
         </div>
     </div>
