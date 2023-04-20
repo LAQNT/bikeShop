@@ -48,3 +48,7 @@ getProductData();
 function buildPageTitle(productName) {  
     titleProduct.textContent = productName
   }
+
+  function goBackShop() {
+    window.location.href = 'index.html'
+  }

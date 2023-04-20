@@ -70,3 +70,7 @@ async function openProduct(productId) {
     let productsData = await getData();
     window.location.href = `product.html?id=${productId}`;
 }
+
+function goBackOffice() {
+    window.location.href = 'backOffice.html'
+  }

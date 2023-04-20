@@ -10,7 +10,7 @@
     position: fixed;
     z-index: 1;
     background-color: rgb(255, 255, 255);
-    box-shadow: .1rem .3rem 1.5rem rgb(0 0 0 / 0.35);
+    box-shadow: .1rem .1rem .5rem rgb(0 0 0 / 0.35);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,12 +121,16 @@ main {
 }
 
 main .container{
-    /* display: flex; */
-    /* justify-content: space-between; */
-    padding: 5rem 4rem 1rem 4rem;
+    padding: 4rem 4rem 1rem 4rem;
     background-color: white;
     border-radius: .5rem;
     border: 1px solid rgb(211, 211, 211);
+}
+
+.btn-outline-secondary{
+    width: 7rem;
+    margin: 0rem 0 4rem 0;
+    font-size: .8rem ;
 }
 
 .container img{
@@ -182,7 +186,7 @@ main .container{
 
 /* ---------footer----- */
 footer{
-    position: static;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
