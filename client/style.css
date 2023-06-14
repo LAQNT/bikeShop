@@ -211,7 +211,6 @@ li a {
 /* ------footer-------- */
 footer{
     margin-top: 8rem;
-    position: sticky;
     bottom: 0;
     left: 0;
     width: 100%;

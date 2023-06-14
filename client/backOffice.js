@@ -182,17 +182,6 @@ function goToShop() {
     window.location.href = `index.html`
 }
 
-// --------------form VALIDATION---------------
-
-
-        
-
-        // --------price validation------
-        // if (priceInput.value == '' || priceInput.value == null) {
-        //     priceInputError.innerText = 'Price is required';
-        // }
-        
-        // e.preventDefault()
 
     
   

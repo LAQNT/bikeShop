@@ -1,5 +1,5 @@
 const apiUrl = `https://striveschool-api.herokuapp.com/api/product/`;
-const apiKey = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM2ZjJiZjMzYjE1MjAwMTQ3NjE3OWMiLCJpYXQiOjE2ODE0OTY3NDUsImV4cCI6MTY4MjcwNjM0NX0.2GntzF_dTHvDwvFGbPJMbX9PbX19sNEZyX8e_4YFXxw`;
+const apiKey = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM2ZjJiZjMzYjE1MjAwMTQ3NjE3OWMiLCJpYXQiOjE2ODY2NTEwMjQsImV4cCI6MTY4Nzg2MDYyNH0.eDRygRC9YVZwnED2zhSfXQD3fDE5HQYScawA8C0ifYI";
 
 const form = document.getElementById('user-form')
 
